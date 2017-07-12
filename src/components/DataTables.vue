@@ -60,6 +60,7 @@
       @select='handleSelect',
       @select-all='handleSelectAll',
       @current-change='handleCurrentRowChange',
+      @expand='handleExpand'
       style='width: 100%')
       slot
       el-table-column(:label='actionColLabel',
@@ -370,6 +371,9 @@ export default {
     },
     handleCurrentRowChange(currentRow, oldCurrentRow) {
       this.$emit('current-change', currentRow, oldCurrentRow)
+    },
+    handleExpand(row, expanded) {
+      this.$emit('expand', row, expanded)
     }
   },
   watch: {
