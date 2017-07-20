@@ -747,6 +747,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    handleSort: function handleSort(obj) {
 	      this.sortData = obj;
+	      this.$emit('sort-change');
 	    },
 	    handleSizeChange: function handleSizeChange(size) {
 	      this.internalPageSize = size;
