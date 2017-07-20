@@ -344,7 +344,6 @@ export default {
       return props ? [].concat(props) : undefined
     },
     handleSort(obj) {
-      console.log('nella libreria', obj)
       this.sortData = obj
       this.$emit('sort-change', obj)
     },
