@@ -345,7 +345,7 @@ export default {
     },
     handleSort(obj) {
       this.sortData = obj
-      this.$emit('sort-change')
+      this.$emit('sort-change',obj)
     },
     handleSizeChange(size) {
       this.internalPageSize = size
