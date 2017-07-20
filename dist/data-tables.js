@@ -746,7 +746,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return props ? [].concat(props) : undefined;
 	    },
 	    handleSort: function handleSort(obj) {
-	      console.log('nella libreria', obj);
 	      this.sortData = obj;
 	      this.$emit('sort-change', obj);
 	    },
